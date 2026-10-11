@@ -1,26 +1,26 @@
-
-#include <iostream>
+#include <bits/stdc++.h>
 using namespace std;
 
 int main() {
-    int N, a, b, c, d, trainee_score, total;
 
+    //codeforce:
+    
+    string N;
     cin >> N;
 
-    a = N / 1000;
-    b = (N / 100) % 10;
-    c = (N / 10) % 10;
-    d = N % 10;
+    int a = N[0] - '0';
+    int b = N[1] - '0';
+    int c = N[2] - '0';
+    int d = N[3] - '0';
 
-    trainee_score = a * b + 2 * c + d;
+    int X = a * b + 2 * c + d;
 
-    total = trainee_score;
-
-    if (trainee_score >= 10) {
-        total = trainee_score / 10 + trainee_score % 10;
+    if (X >= 10) {
+        X = X / 10 + X % 10;
     }
 
-    cout << total;
+    cout << X << '\n';
 
     return 0;
 }
+
