@@ -6,12 +6,12 @@ int main(){
 
     //codeforce:
 
-    int X,Y;
+    long long X,Y;
     
     cin>>X>>Y;
 
     int summation_result=X+Y;
-    int multiplication_result=X*Y;
+    long long multiplication_result=X*Y;
     int subtraction_result=X-Y;
 
     cout<<X<<" + "<<Y<<" = " <<summation_result<<endl
