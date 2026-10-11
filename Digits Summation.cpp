@@ -5,14 +5,14 @@ using namespace std;
 int main(){
 
     //codeforce:
-  
-    int A,B;
+
+    long long A,B;
 
     cin>>A>>B;
 
-    int C=A%10 , D=B%10;
-    int TOTAL=C+D;
-    
+    long long C=A%10 , D=B%10;
+    long long TOTAL=C+D;
+
     cout<< TOTAL;
 
     return 0;
