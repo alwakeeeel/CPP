@@ -18,11 +18,17 @@ int main(){
     d=N%10;
 
     trainee_score=a*b+2*c+d;
+    int firstDigit,secondDigit;
+    int total = trainee_score;
 
-    int firstDigit=trainee_score/10;
-    int secondDigit=trainee_score%10;
+    while(trainee_score >= 10.){
+    
+    firstDigit=trainee_score/10;
+    secondDigit=trainee_score%10;
+    total=firstDigit+secondDigit;
+    trainee_score=total;
 
-    int total=firstDigit+secondDigit;
+    }
 
     cout<<total;
 
