@@ -18,7 +18,5 @@ int main(){
     double price=P/precentPaid;
     cout<<fixed<<setprecision(2)<<price;
 
-    cout<<price;
-
     return 0;
 }
