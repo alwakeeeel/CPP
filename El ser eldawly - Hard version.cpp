@@ -1,36 +1,26 @@
-#include <iostream>
 
+#include <iostream>
 using namespace std;
 
-int main(){
+int main() {
+    int N, a, b, c, d, trainee_score, total;
 
-    //codeforce:
+    cin >> N;
 
-    int N,a,b,c,d,trainee_score;
+    a = N / 1000;
+    b = (N / 100) % 10;
+    c = (N / 10) % 10;
+    d = N % 10;
 
-    cin>>N;
+    trainee_score = a * b + 2 * c + d;
 
-    a=N/1000;
-    b=N/100;
-    b=b%10;
-    c=N/10;
-    c=c%10;
-    d=N%10;
+    total = trainee_score;
 
-    trainee_score=a*b+2*c+d;
-    int firstDigit,secondDigit;
-    int total = trainee_score;
-
-    while(trainee_score >= 10.){
-    
-    firstDigit=trainee_score/10;
-    secondDigit=trainee_score%10;
-    total=firstDigit+secondDigit;
-    trainee_score=total;
-
+    if (trainee_score >= 10) {
+        total = trainee_score / 10 + trainee_score % 10;
     }
 
-    cout<<total;
+    cout << total;
 
     return 0;
 }
