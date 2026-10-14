@@ -31,9 +31,9 @@ int main() {
         B = temp;
     }
 
-    cout << A << B  << C ;
-
-    cout << A1 <<  B1  << C1 ;
+    cout << A << " " << B << " " << C << "\n";
+    cout << A1 << " " << B1 << " " << C1 << "\n";
 
     return 0;
+    
 }
