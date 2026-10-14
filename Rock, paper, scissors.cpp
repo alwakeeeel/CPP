@@ -11,17 +11,19 @@ int main(){
     cin>>result1>>result2;
 
     if(result1=='R' && result2=='P'){
-        cout<<"P2";
+        cout<<"p2";
     }else if(result1=='R' && result2=='S'){
-        cout<<"P1";
+        cout<<"p1";
     }else if(result1=='P' && result2=='R'){
-        cout<<"P1";
+        cout<<"p1";
     }else if(result1=='P' && result2=='S'){
-        cout<<"P2";
-    }else if(result1=='R' && result2=='P'){
-        cout<<"P2";
-    }else if(result1=='R' && result2=='S'){
-        cout<<"P1";
+        cout<<"p2";
+    }else if(result1=='S' && result2=='P'){
+        cout<<"p1";
+    }else if(result1=='S' && result2=='R'){
+        cout<<"p2";
+    }else{
+        cout<<"draw";
     }
 
     return 0;
