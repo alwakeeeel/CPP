@@ -11,8 +11,8 @@ int main(){
 
     cin>>A>>B>>C>>D;
 
-    R1=D*log(C);
-    R2=B*log(A);
+    R1=D*logl(C);
+    R2=B*logl(A);
 
     if(R2>R1){
         cout<<"YES";
