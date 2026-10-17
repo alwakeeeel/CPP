@@ -7,7 +7,7 @@ int main(){
 
     //codeforces task2:
 
-    double A,B,C,D,R1,R2;
+    long double A,B,C,D,R1,R2;
 
     cin>>A>>B>>C>>D;
 
