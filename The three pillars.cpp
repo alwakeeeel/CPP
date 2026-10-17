@@ -5,24 +5,24 @@
 using namespace std;
 
 int main() {
+
+    //codeforces task2:
+    
     long long A, B, C;
     char Ch;
 
     cin >> A >> B >> C >> Ch;
 
-    // Pillar 1
     if ((A + B + C) % 3 != 0 || (A + B + C) % 5 == 0) {
         cout << "Pillar 1 Failed";
         return 0;
     }
 
-    // Pillar 2
     if (!((Ch >= 'A' && Ch <= 'Z') && ((Ch + A) % 2 == 0))) {
         cout << "Pillar 2 Failed";
         return 0;
     }
 
-    // Pillar 3
     bool pythagorean =
         (A * A + B * B == C * C) ||
         (A * A + C * C == B * B) ||
