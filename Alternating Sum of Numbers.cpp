@@ -17,5 +17,6 @@ int main(){
                 alternate=alternate-numbers;
             }
         }
+        cout<<alternate<<" ";
     }
 }
