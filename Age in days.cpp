@@ -14,7 +14,7 @@ int main(){
     day=days%365;
     months=day/30;
     day=day%30;
-
+    
     cout<<years<<months<<day;
     
     return 0;
