@@ -8,7 +8,8 @@ int main(){
 
     int size;
     string str;
-    cin>>str;
+
+    getline(cin,str); //to read the full line not just to the first whitespace.
 
     size=str.size();
 
